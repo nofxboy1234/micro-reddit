@@ -1,0 +1,24 @@
+User
+
+username:string [unique, present]
+email:string [unique, present]
+password:string [present]
+
+has_many posts
+-----------------------------------------------
+Post
+
+title:string [unique, present]
+link:string [present]
+
+belongs_to user
+has_many comments
+-----------------------------------------------
+Comment
+
+title:string [unique, present]
+body:text [present]
+
+belongs_to user
+belongs_to post
+-----------------------------------------------
