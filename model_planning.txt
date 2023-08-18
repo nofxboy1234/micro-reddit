@@ -5,6 +5,7 @@ email:string [unique, present]
 password:string [present]
 
 has_many posts
+has_many comments
 -----------------------------------------------
 Post
 
